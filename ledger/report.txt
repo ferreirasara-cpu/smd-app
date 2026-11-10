@@ -1,0 +1,10 @@
+Transactions per category
+  12 groceries
+  11 restaurants
+   9 transport
+   6 transfer
+   6 subscriptions
+   3 interest
+   3 income
+   3 housing
+   3 health
