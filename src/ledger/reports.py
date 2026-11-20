@@ -39,4 +39,5 @@ def spending_by_category(transactions: Iterable[Transaction]) -> dict[str, Decim
 
 def net_by_month(transactions: Iterable[Transaction]) -> dict[str, Decimal]:
     """Income minus spending of each month (`2026-01`...), sorted by month."""
-    raise NotImplementedError
+    totals = totals_by(transactions, key=lambda t: t.date.strftime("%Y-%m"))
+    return dict(sorted(totals.items()))
